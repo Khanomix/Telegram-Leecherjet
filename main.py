@@ -90,4 +90,9 @@ if os.path.exists("/work/Telegram-Leecher/my_bot.session"):
     
 print("\rStarting Bot....")
 
+<<<<<<< HEAD
 !cd /work/Telegram-Leecher/ && python3 -m colab_leecher #type:ignore
+=======
+!cd /work/Telegram-Leecher/ && python3 -m colab_leecher #type:ignore
+
+>>>>>>> 4cc8eb26c2d0c0963f7d98cbbf7a6062eacf0a47
