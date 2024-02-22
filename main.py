@@ -65,7 +65,7 @@ if len(str(DUMP_ID)) == 10 and "-100" not in str(DUMP_ID):
 if os.path.exists("/work/sample_data"):
     shutil.rmtree("/work/sample_data")
 
-cmd = "git clone https://github.com/XronTrix10/Telegram-Leecher && bash /work/Telegram-Leecher/setup.sh"
+cmd = "git clone https://github.com/Khanomix/Telegram-Leecher && bash /work/Telegram-Leecher/setup.sh"
 proc = subprocess.run(cmd, shell=True)
 cmd = "apt update && apt install ffmpeg aria2"
 proc = subprocess.run(cmd, shell=True)
