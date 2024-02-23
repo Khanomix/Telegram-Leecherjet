@@ -71,8 +71,8 @@ class BotTimes:
 class Paths:
     WORK_PATH = "/work/files/workspace/Telegram-Leecher/BOT_WORK"
     THMB_PATH = "/work/files/workspace/Telegram-Leecher/colab_leecher/Thumbnail.jpg"
-    VIDEO_FRAME = f"{WORK_PATH}/video_frame.jpg"
-    HERO_IMAGE = f"{WORK_PATH}/Hero.jpg"
+    VIDEO_FRAME = f"/work/files/workspace/Telegram-Leecher/custom_thmb.jpg"
+    HERO_IMAGE = f"/work/files/workspace/Telegram-Leecher/custom_thmb.jpg"
     DEFAULT_HERO =  "/work/files/workspace/Telegram-Leecher/custom_thmb.jpg"
     MOUNTED_DRIVE = "/work/files/workspace/drive"
     down_path = f"{WORK_PATH}/Downloads"
