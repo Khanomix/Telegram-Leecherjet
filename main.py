@@ -62,14 +62,14 @@ if len(str(DUMP_ID)) == 10 and "-100" not in str(DUMP_ID):
     n_dump = "-100" + str(DUMP_ID)
     DUMP_ID = int(n_dump)
 
-if os.path.exists("/work/files/workspace/sample_data"):
-    shutil.rmtree("/work/files/workspace/sample_data")
+if os.path.exists("/data/notebook_files/sample_data"):
+    shutil.rmtree("/data/notebook_files/sample_data")
 
-cmd = "git clone https://github.com/Khanomix/Telegram-Leecher && bash /work/files/workspace/Telegram-Leecher/setup.sh"
+cmd = "git clone https://github.com/Khanomix/Telegram-Leecher && bash /data/notebook_files/Telegram-Leecher/setup.sh"
 proc = subprocess.run(cmd, shell=True)
 cmd = "apt update && apt install ffmpeg aria2"
 proc = subprocess.run(cmd, shell=True)
-cmd = "pip3 install -r /work/files/workspace/Telegram-Leecher/requirements.txt"
+cmd = "pip3 install -r /data/notebook_files/Telegram-Leecher/requirements.txt"
 proc = subprocess.run(cmd, shell=True)
 
 credentials = {
@@ -80,19 +80,19 @@ credentials = {
     "DUMP_ID": DUMP_ID,
 }
 
-with open('/work/files/workspace/Telegram-Leecher/credentials.json', 'w') as file:
+with open('/data/notebook_files/Telegram-Leecher/credentials.json', 'w') as file:
     file.write(json.dumps(credentials))
 
 Working = False
 
-if os.path.exists("/work/files/workspace/Telegram-Leecher/my_bot.session"):
-    os.remove("/work/files/workspace/Telegram-Leecher/my_bot.session") # Remove previous bot session
+if os.path.exists("/data/notebook_files/Telegram-Leecher/my_bot.session"):
+    os.remove("/data/notebook_files/Telegram-Leecher/my_bot.session") # Remove previous bot session
     
 print("\rStarting Bot....")
 
 <<<<<<< HEAD
-!cd /work/files/workspace/Telegram-Leecher/ && python3 -m colab_leecher #type:ignore
+!cd /data/notebook_files/Telegram-Leecher/ && python3 -m colab_leecher #type:ignore
 =======
-!cd /work/files/workspace/Telegram-Leecher/ && python3 -m colab_leecher #type:ignore
+!cd /data/notebook_files/Telegram-Leecher/ && python3 -m colab_leecher #type:ignore
 
 >>>>>>> 4cc8eb26c2d0c0963f7d98cbbf7a6062eacf0a47
